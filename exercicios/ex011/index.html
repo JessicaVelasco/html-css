@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagem/foto-m.png" type="image/png">
+    <img src="imagem/foto-g.png" alt="Imagem flexível">
+</picture>
+<!--existem duas maneiras de colocar audio em HTML-->
+ <h1>Reproduzindo Áudios</h1>
+<!--1 maneira-->
+<audio src="midia/musicasite.mp3" controls autoplay></audio>
+
+<!--2 maneira - primeiro o programa vai tentar carregar na ordem abaixo o tipo de áudio comp. com o navegador usado pelo usuário se ele não conseguir,ele mostra a msg com a opção de baixar o arq. para o usuário-->                       
+                                        <!--loop serve para o áudio repedir quando ele acabar-->  
+<audio preload="metadata" autoplay controls loop>
+    <!--o metadata é a melhor opção por carregar somente algumas informações do áudio-->
+    <source src="midia/fantasyland.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.wav" type="audio/wav">
+    <!--Formatos de áudios mais compativeis com os nevegadores: mp3, ogg, wav(o arq. wav é muito pesado, evite usar)-->
+    <p>Infelizmente o seu navegador não consegue reproduzir áudios. <a href="midia/fantasyland.mp3">Clique aqui para baixar o arquivo mp3</a>.</p>
+    <!--nessa 2 forma, podemos colocar varios tipos de  formatos para diferentes tipos de navegadores-->
+</audio>
+
+</body>
+</html>

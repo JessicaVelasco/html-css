@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+    /*
+    SELETORES PERSONALIZADOS
+    #  = id
+    *  = class
+    :  = pseudo-class
+    :: = pseudo-element
+    >  = children (filho)
+
+    */
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited { /*a:visited é uma pseudo classe*/
+            color: cornflowerblue;
+        }
+        a:hover { /* também é uma pseudo classe*/
+            text-decoration: underline;
+            color: black;
+        }
+        a:active {
+            color: blueviolet;
+        }
+        .especial::before { /* pseudo elemento*/
+            content: '♫ ';
+            color: blueviolet;
+        }
+        .especial::after { /* pseudo elemento*/
+            content:' [A Pequena Sereia]';
+            color: darkgray;
+            font-weight: normal;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/jeh_velasco/" target="_blank">Instagran</a></li>
+        <li><a href="https://www.facebook.com/jessica.velasco.5851"target="_blank">Facebook</a></li>
+        <li><a href="https://www.youtube.com/watch?v=ev3NYhgvrm0"target="_blank" class="especial">Youtube</a></li>
+    </ul>
+    
+</body>
+</html>
