@@ -8,12 +8,20 @@
     <style>
         body {
             height: 100vh;
-            background-size: cover;
+            /*background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-attachment: fixed;
+
+             Shorthand - background
+            tem que seguir essa ordem para dar certo: color > image > position > repeat > [size] > attachment 
+            o size ainda não funciona no shorthand, por isso temos que colocar separado*/
+
+            background-size: cover;
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
         }
         main {
             background-color: white;
