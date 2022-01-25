@@ -28,13 +28,33 @@
             text-align: center;
         }
 
+        .colnome, .colidade {
+            background-color: burlywood;
+        }
+
+        .colsexo {
+            background-color: chocolate;
+        }
+
+        .colprofissao {
+            background-color: darkolivegreen;
+        }
+
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
 
     <table>
+        <colgroup>
+            <col class="colnome">
+            <col class="colsexo">
+            <col class="colidade">
+            <col class="colprofissao">
+        </colgroup>
+        
         <caption>Cadastro </caption>
+
         <tr>
             <th scope="col">Nome</th>
             <th scope="col">Sexo</th>
